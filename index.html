@@ -125,7 +125,16 @@
           height: 2px;
           background: linear-gradient(90deg, #FFD166, #0099FF);
           box-shadow: 0 0 5px #0099FF;
+        }/* 个人投资方向标题专属配色 */
+        .invest-title {
+          text-shadow: 0 0 10px #FFD700 !important; /* 金色阴影 */
+          color: #B8860B !important; /* 深金色 */
         }
+        .invest-title::after {
+          background: linear-gradient(90deg, #FFD700, #B8860B) !important;
+          box-shadow: 0 0 5px #FFD700 !important;
+        }
+        
 
         .cyber-subtitle {
           color: #E67E22; /* 凤梨橙，适配浅背景更醒目 */
@@ -358,9 +367,9 @@
         <!-- 个人方向 -->
         <section id="home" class="section cyber-section">
             <div class="container">
-                <h2 class="cyber-title">个人投资方向</h2>
+                <h2 class="cyber-title invest-title">主玩方向</h2>
                 <div class="direction-card cyber-card">
-                    <p class="cyber-text-sm">专注于CS2饰品市场的长期价值投资,重点分析贴纸和收藏品的市场趋势与潜力，同时涉及部分千百、材料，为玩家提供理性、数据驱动的投资参考。</p>
+                    <p class="cyber-text-sm">专注于CS2饰品市场的长期价值投资，重点分析贴纸和收藏品的市场趋势与潜力，同时涉及部分千百、材料，为玩家提供理性、数据驱动的投资参考。</p>
                     <ul class="cyber-list">
                         <li>核心赛道：贴纸系列、收藏品</li>
                         <li>投资理念：价值与存世量优先，同时埋伏短期炒作热点</li>
