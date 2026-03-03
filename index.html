@@ -126,13 +126,22 @@
           background: linear-gradient(90deg, #FFD166, #0099FF);
           box-shadow: 0 0 5px #0099FF;
         }
+        /* 选品推荐标题专属配色 - 浅蓝紫 */
+.rec-title {
+  text-shadow: 0 0 10px #8A2BE2 !important; /* 淡紫阴影 */
+  color: #6A0DAD !important; /* 深紫蓝 */
+}
+.rec-title::after {
+  background: linear-gradient(90deg, #8A2BE2, #6A0DAD) !important; /* 蓝紫渐变下划线 */
+  box-shadow: 0 0 5px #8A2BE2 !important;
+}
         /* 公告中心标题专属配色 - 浅金色 */
 .announce-title {
   text-shadow: 0 0 10px #FFF3CD !important; /* 浅金阴影 */
   color: #FFC107 !important; /* 浅金属金 */
 }
 .announce-title::after {
-  background: linear-gradient(90deg, #FFF3CD, #FFC107) !important; /* 浅金渐变下划线 */
+  background: linear-gradient(90deg, #FFEEAD, #8A2BE2) !important; /* 浅金渐变下划线 */
   box-shadow: 0 0 5px #FFF3CD !important;
 }
         /* 个人投资方向标题专属配色 */
@@ -143,6 +152,15 @@
 .invest-title::after {
   background: linear-gradient(90deg, #FFEEAD, #8A2BE2) !important; /* 浅金+淡紫渐变 */
   box-shadow: 0 0 5px #FFEEAD !important;
+}
+        /* CS2凤梨标题专属配色 - 浅凤梨橙金 */
+.cs2-title {
+  text-shadow: 0 0 10px #FFE0B2 !important; /* 浅橙金阴影（更柔和） */
+  color: #FF9800 !important; /* 凤梨橙（比原色调更浅） */
+}
+.cs2-title::after {
+  background: linear-gradient(90deg, #FFE0B2, #FF9800) !important; /* 浅橙金渐变下划线 */
+  box-shadow: 0 0 5px #FFE0B2 !important;
 }
         
 
@@ -417,7 +435,7 @@
         <!-- 推荐区 -->
         <section id="recommendations" class="section cyber-section">
             <div class="container">
-                <h2 class="cyber-title">选品推荐</h2>
+                <h2 class="cyber-title rec-title">选品推荐</h2>
                 <div class="recommendation-grid">
                     <!-- 贴纸推荐 -->
                     <div class="rec-card cyber-card">
@@ -450,7 +468,7 @@
         <!-- 关于我 -->
         <section id="about" class="section cyber-section bg-dark">
             <div class="container">
-                <h2 class="cyber-title">CS2凤梨</h2>
+                <h2 class="cyber-title cs2-title">CS2凤梨</h2>
                 <div class="about-content cyber-card">
                     <img src="./FL.jpg" alt="头像" class="about-avatar">
                     <p class="cyber-text-sm">资深CS2玩家与市场分析师，深耕贴纸和收藏品板块，擅长数据驱动的价值判断与趋势预测，期待能与您在CS2市场上有所收获。</p>
